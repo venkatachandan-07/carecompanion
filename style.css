@@ -1,0 +1,1283 @@
+/* =========================
+   MEDICATION REMINDER
+   MEMBER 2
+========================= */
+
+.medication-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.medication-header {
+    margin-bottom: 30px;
+}
+
+.medication-header h1 {
+    font-size: 36px;
+    color: #172033;
+    margin-bottom: 10px;
+}
+
+.medication-header p {
+    color: #718096;
+    font-size: 16px;
+}
+
+
+/* =========================
+   ADD MEDICINE CARD
+========================= */
+
+.medicine-form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.06);
+
+    margin-bottom: 30px;
+}
+
+.medicine-form-card h2 {
+    color: #172033;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.medication-container
+.medicine-form-card
+.input-group {
+    margin-bottom: 20px;
+}
+
+.medication-container
+.medicine-form-card
+.input-group label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+    color: #374151;
+}
+
+.medication-container
+.medicine-form-card
+.input-group input,
+.medication-container
+.medicine-form-card
+.input-group select {
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d7dee7;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+.medication-container
+.medicine-form-card
+.input-group input:focus,
+.medication-container
+.medicine-form-card
+.input-group select:focus {
+
+    border-color: #0b9aa5;
+
+    box-shadow:
+        0 0 0 3px rgba(11, 154, 165, 0.1);
+}
+
+
+/* =========================
+   FORM ROW
+========================= */
+
+.medication-container .form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+.add-medicine-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #087f8c;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-medicine-button:hover {
+
+    background: #066b76;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 20px rgba(8, 127, 140, 0.2);
+}
+
+
+/* =========================
+   MEDICINE SECTION
+========================= */
+
+.medicine-section {
+
+    margin-top: 30px;
+}
+
+.medicine-section h2 {
+
+    color: #172033;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   MEDICINE CARD
+========================= */
+
+.medicine-card {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    margin-bottom: 15px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.06);
+
+    border-left: 4px solid #087f8c;
+
+    transition: 0.3s;
+}
+
+.medicine-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   MEDICINE NAME
+========================= */
+
+.medicine-card h3 {
+
+    color: #087f8c;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   MEDICINE DETAILS
+========================= */
+
+.medicine-details {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.medicine-detail {
+
+    background: #f4f8fb;
+
+    padding: 12px;
+
+    border-radius: 8px;
+}
+
+.medicine-detail span {
+
+    display: block;
+
+    font-size: 12px;
+
+    color: #718096;
+
+    margin-bottom: 5px;
+}
+
+.medicine-detail strong {
+
+    color: #1f2937;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MEDICINE BUTTONS
+========================= */
+
+.medicine-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.taken-button {
+
+    padding: 9px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #087f8c;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.taken-button:hover {
+
+    background: #066b76;
+}
+
+
+.delete-medicine-button {
+
+    padding: 9px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #dc2626;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.delete-medicine-button:hover {
+
+    background: #b91c1c;
+}
+
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.empty-message {
+
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    color: #718096;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+.medication-container {
+
+    animation:
+        medicationFadeIn 0.6s ease;
+}
+
+@keyframes medicationFadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .medication-container {
+
+        padding: 25px 20px;
+    }
+
+    .medication-header h1 {
+
+        font-size: 30px;
+    }
+
+    .medication-container .form-row {
+
+        grid-template-columns: 1fr;
+    }
+
+    .medicine-details {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .medicine-form-card {
+
+        padding: 20px;
+    }
+
+    .medication-header h1 {
+
+        font-size: 27px;
+    }
+
+    .medicine-actions {
+
+        flex-direction: column;
+    }
+
+    .taken-button,
+    .delete-medicine-button {
+
+        width: 100%;
+    }
+}
+/* =========================================================
+   HEALTHCARE PAGES
+   Recovery & Health Management
+========================================================= */
+
+
+/* =========================
+   COMMON PAGE
+========================= */
+
+.health-page {
+    min-height: 100vh;
+    background: #f4f8fb;
+    padding: 30px 6%;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    background: linear-gradient(135deg, #087f8c, #0b9aa5);
+    color: white;
+
+    padding: 25px 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 5px 15px rgba(8, 127, 140, 0.15);
+}
+
+.page-header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.health-nav {
+    display: flex;
+    gap: 10px;
+
+    background: white;
+
+    padding: 12px 15px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+
+    flex-wrap: wrap;
+}
+
+.health-nav a {
+    text-decoration: none;
+
+    color: #596579;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.health-nav a:hover {
+    background: #e8f7f8;
+    color: #087f8c;
+}
+
+.health-nav a.active {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.health-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.health-card h2 {
+    color: #172033;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+.health-card h3 {
+    color: #087f8c;
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+.health-card p {
+    color: #596579;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.health-form {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.health-input {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.health-input label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+
+    margin-bottom: 8px;
+}
+
+.health-input input,
+.health-input select,
+.health-input textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d7dee7;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: 0.3s;
+}
+
+.health-input textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+.health-input input:focus,
+.health-input select:focus,
+.health-input textarea:focus {
+    border-color: #0b9aa5;
+
+    box-shadow:
+        0 0 0 3px rgba(11, 154, 165, 0.1);
+}
+
+
+/* Full Width Form Element */
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.health-button {
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #087f8c;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.health-button:hover {
+    background: #066b76;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 15px rgba(8, 127, 140, 0.2);
+}
+
+.secondary-button {
+    background: #e8f7f8;
+
+    color: #087f8c;
+}
+
+.secondary-button:hover {
+    background: #d5f0f2;
+}
+
+
+/* =========================
+   DISCHARGE INSTRUCTIONS
+========================= */
+
+.instruction-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.instruction-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    background: #f8fbfc;
+
+    border-left: 4px solid #0b9aa5;
+
+    border-radius: 8px;
+}
+
+.instruction-number {
+    min-width: 32px;
+
+    height: 32px;
+
+    background: #087f8c;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.instruction-item h3 {
+    margin-bottom: 5px;
+}
+
+.instruction-item p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   DAILY HEALTH CHECK
+========================= */
+
+.check-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.check-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 16px;
+
+    background: #f8fbfc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+}
+
+.check-item label {
+    font-weight: 600;
+
+    color: #374151;
+}
+
+.check-options {
+    display: flex;
+
+    gap: 15px;
+}
+
+.check-options label {
+    font-size: 13px;
+
+    font-weight: normal;
+
+    color: #596579;
+}
+
+
+/* =========================
+   HEALTH STATUS
+========================= */
+
+.status {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.status-good {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+.status-warning {
+    background: #fef3c7;
+
+    color: #92400e;
+}
+
+.status-danger {
+    background: #fee2e2;
+
+    color: #991b1b;
+}
+
+
+/* =========================
+   ALERTS
+========================= */
+
+.alert-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.alert {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    border-left: 5px solid;
+}
+
+.alert-icon {
+    font-size: 25px;
+}
+
+.alert h3 {
+    margin-bottom: 5px;
+}
+
+.alert p {
+    font-size: 14px;
+}
+
+
+/* Warning Alert */
+
+.alert.warning {
+    background: #fff8e1;
+
+    border-color: #f59e0b;
+}
+
+.alert.warning h3 {
+    color: #92400e;
+}
+
+
+/* Danger Alert */
+
+.alert.danger {
+    background: #fff1f2;
+
+    border-color: #dc2626;
+}
+
+.alert.danger h3 {
+    color: #991b1b;
+}
+
+
+/* Success Alert */
+
+.alert.success {
+    background: #ecfdf5;
+
+    border-color: #16a34a;
+}
+
+.alert.success h3 {
+    color: #166534;
+}
+
+
+/* =========================
+   RECOVERY DASHBOARD
+========================= */
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.dashboard-card {
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 13px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card .card-icon {
+    width: 45px;
+
+    height: 45px;
+
+    background: #e8f7f8;
+
+    color: #087f8c;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+.dashboard-card h3 {
+    color: #718096;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+.dashboard-card .value {
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-container {
+    margin-top: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+
+    height: 10px;
+
+    background: #e5e9ef;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+
+    background: #087f8c;
+
+    border-radius: 10px;
+
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    color: #596579;
+}
+
+
+/* =========================
+   REPORTS / HISTORY
+========================= */
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.health-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 10px;
+}
+
+.health-table th {
+    background: #087f8c;
+
+    color: white;
+
+    padding: 14px;
+
+    text-align: left;
+
+    font-size: 14px;
+}
+
+.health-table td {
+    padding: 14px;
+
+    border-bottom: 1px solid #e5e9ef;
+
+    color: #596579;
+
+    font-size: 14px;
+}
+
+.health-table tr:hover {
+    background: #f8fbfc;
+}
+
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.empty-message {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: #718096;
+
+    background: #f8fbfc;
+
+    border-radius: 10px;
+
+    border: 1px dashed #d7dee7;
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.success-message {
+    padding: 14px 18px;
+
+    background: #ecfdf5;
+
+    color: #166534;
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message {
+    padding: 14px 18px;
+
+    background: #fff1f2;
+
+    color: #991b1b;
+
+    border: 1px solid #fecdd3;
+
+    border-radius: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   TWO COLUMN LAYOUT
+========================= */
+
+.two-column {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   RECENT ACTIVITY
+========================= */
+
+.activity-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.activity-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px;
+
+    border-bottom: 1px solid #e5e9ef;
+}
+
+.activity-icon {
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #e8f7f8;
+
+    color: #087f8c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.activity-item p {
+    font-size: 14px;
+
+    margin: 0;
+}
+
+.activity-time {
+    font-size: 12px;
+
+    color: #9ca3af;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.health-footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #718096;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .health-page {
+        padding: 20px;
+    }
+
+    .page-header {
+        padding: 22px;
+    }
+
+    .page-header h1 {
+        font-size: 25px;
+    }
+
+    .health-form {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .health-nav {
+        flex-direction: column;
+    }
+
+    .health-nav a {
+        text-align: center;
+    }
+
+    .check-item {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+    .check-options {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .health-page {
+        padding: 15px;
+    }
+
+    .health-card {
+        padding: 18px;
+    }
+
+    .page-header h1 {
+        font-size: 22px;
+    }
+
+    .page-header p {
+        font-size: 13px;
+    }
+
+    .health-table th,
+    .health-table td {
+        padding: 10px;
+
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Reports & History</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="health-page">
+
+        <!-- Header -->
+
+        <div class="page-header">
+
+            <h1>📑 Reports & History</h1>
+
+            <p>
+                View your saved health information
+                and recovery history
+            </p>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <div class="health-nav">
+
+            <a href="medications.html">
+                💊 Medications
+            </a>
+
+            <a href="discharge.html">
+                🏥 Discharge
+            </a>
+
+            <a href="daily-check.html">
+                📝 Daily Check
+            </a>
+
+            <a href="alerts.html">
+                ⚠️ Alerts
+            </a>
+
+            <a href="recovery.html">
+                📊 Recovery
+            </a>
+
+            <a href="reports.html" class="active">
+                📑 Reports
+            </a>
+
+        </div>
+
+
+        <!-- Patient Information -->
+
+        <div class="health-card">
+
+            <h2>Patient Information</h2>
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        👤
+                    </div>
+
+                    <h3>Patient Name</h3>
+
+                    <div class="value"
+                         id="patientName">
+                        Not Available
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        👨‍⚕️
+                    </div>
+
+                    <h3>Doctor</h3>
+
+                    <div class="value"
+                         id="doctorName">
+                        Not Available
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        📅
+                    </div>
+
+                    <h3>Discharge Date</h3>
+
+                    <div class="value"
+                         id="dischargeDate">
+                        Not Available
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        📋
+                    </div>
+
+                    <h3>Follow-up Date</h3>
+
+                    <div class="value"
+                         id="followupDate">
+                        Not Available
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Latest Health Report -->
+
+        <div class="health-card">
+
+            <h2>Latest Health Report</h2>
+
+            <div class="table-container">
+
+                <table class="health-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Information</th>
+
+                            <th>Details</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Health Check Date</td>
+
+                            <td id="checkDate">
+                                Not Available
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Temperature</td>
+
+                            <td id="temperature">
+                                Not Available
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Pain Level</td>
+
+                            <td id="painLevel">
+                                Not Available
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Sleep Quality</td>
+
+                            <td id="sleepQuality">
+                                Not Available
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Appetite</td>
+
+                            <td id="appetite">
+                                Not Available
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Energy Level</td>
+
+                            <td id="energyLevel">
+                                Not Available
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Overall Health</td>
+
+                            <td id="healthStatus">
+                                Not Available
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- Symptoms -->
+
+        <div class="health-card">
+
+            <h2>Symptoms</h2>
+
+            <div class="empty-message"
+                 id="symptoms">
+
+                No symptoms recorded.
+
+            </div>
+
+        </div>
+
+
+        <!-- Additional Notes -->
+
+        <div class="health-card">
+
+            <h2>Additional Notes</h2>
+
+            <div class="empty-message"
+                 id="notes">
+
+                No additional notes recorded.
+
+            </div>
+
+        </div>
+
+
+        <!-- Discharge Instructions -->
+
+        <div class="health-card">
+
+            <h2>Special Discharge Instructions</h2>
+
+            <div class="empty-message"
+                 id="specialInstructions">
+
+                No special instructions recorded.
+
+            </div>
+
+        </div>
+
+
+        <!-- Actions -->
+
+        <div class="health-card">
+
+            <button
+                class="health-button"
+                onclick="printReport()">
+
+                🖨️ Print Report
+
+            </button>
+
+            <button
+                class="health-button secondary-button"
+                onclick="clearReport()">
+
+                Clear Saved Data
+
+            </button>
+
+        </div>
+
+
+        <!-- Footer -->
+
+        <div class="health-footer">
+
+            Recovery & Health Management
+
+        </div>
+
+    </div>
+
+
+    <script src="reports.js"></script>
+
+</body>
+
+</html>

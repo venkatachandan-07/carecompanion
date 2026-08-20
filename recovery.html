@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recovery Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="health-page">
+
+        <!-- Header -->
+        <div class="page-header">
+            <h1>📊 Recovery Dashboard</h1>
+            <p>Track your recovery progress and health information</p>
+        </div>
+
+
+        <!-- Navigation -->
+        <div class="health-nav">
+
+            <a href="medications.html">💊 Medications</a>
+
+            <a href="discharge.html">🏥 Discharge</a>
+
+            <a href="daily-check.html">📝 Daily Check</a>
+
+            <a href="alerts.html">⚠️ Alerts</a>
+
+            <a href="recovery.html" class="active">
+                📊 Recovery
+            </a>
+
+            <a href="reports.html">📑 Reports</a>
+
+        </div>
+
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-grid">
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+                    ❤️
+                </div>
+
+                <h3>Health Status</h3>
+
+                <div class="value" id="healthStatus">
+                    Not Available
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+                    🌡️
+                </div>
+
+                <h3>Temperature</h3>
+
+                <div class="value" id="temperature">
+                    -- °F
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+                    💊
+                </div>
+
+                <h3>Medication</h3>
+
+                <div class="value">
+                    Active
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+                    📅
+                </div>
+
+                <h3>Last Check</h3>
+
+                <div class="value" id="lastCheck">
+                    None
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Recovery Progress -->
+        <div class="health-card">
+
+            <h2>Recovery Progress</h2>
+
+            <div class="progress-container">
+
+                <div class="progress-text">
+
+                    <span>Overall Recovery</span>
+
+                    <span id="progressText">
+                        0%
+                    </span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        id="progress"
+                        style="width: 0%;">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Health Information -->
+        <div class="two-column">
+
+            <!-- Latest Health Check -->
+            <div class="health-card">
+
+                <h2>Latest Health Check</h2>
+
+                <div class="activity-list">
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+                            🌡️
+                        </div>
+
+                        <div>
+
+                            <p>
+                                Temperature:
+                                <strong id="tempInfo">
+                                    Not Available
+                                </strong>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+                            ❤️
+                        </div>
+
+                        <div>
+
+                            <p>
+                                Pain Level:
+                                <strong id="painInfo">
+                                    Not Available
+                                </strong>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+                            😴
+                        </div>
+
+                        <div>
+
+                            <p>
+                                Sleep:
+                                <strong id="sleepInfo">
+                                    Not Available
+                                </strong>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+                            ⚡
+                        </div>
+
+                        <div>
+
+                            <p>
+                                Energy:
+                                <strong id="energyInfo">
+                                    Not Available
+                                </strong>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recovery Tips -->
+            <div class="health-card">
+
+                <h2>Recovery Tips</h2>
+
+                <div class="instruction-list">
+
+                    <div class="instruction-item">
+
+                        <div class="instruction-number">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>Take Rest</h3>
+
+                            <p>
+                                Get sufficient sleep and rest.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="instruction-item">
+
+                        <div class="instruction-number">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>Stay Hydrated</h3>
+
+                            <p>
+                                Drink enough water throughout the day.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="instruction-item">
+
+                        <div class="instruction-number">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>Follow Medication</h3>
+
+                            <p>
+                                Take prescribed medicines on time.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Symptoms -->
+        <div class="health-card">
+
+            <h2>Latest Symptoms</h2>
+
+            <p id="symptoms">
+                No symptoms recorded.
+            </p>
+
+        </div>
+
+
+        <!-- Go to Daily Check -->
+        <div class="health-card">
+
+            <a
+                href="daily-check.html"
+                class="health-button"
+                style="text-decoration: none;
+                       display: inline-block;">
+
+                Update Today's Health Check
+
+            </a>
+
+        </div>
+
+
+        <!-- Footer -->
+        <div class="health-footer">
+
+            Recovery & Health Management
+
+        </div>
+
+    </div>
+
+
+    <script src="recovery.js"></script>
+
+</body>
+
+</html>

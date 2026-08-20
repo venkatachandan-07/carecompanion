@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Health Check</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="health-page">
+
+        <!-- Header -->
+        <div class="page-header">
+            <h1>📝 Daily Health Check</h1>
+            <p>Record your health condition every day</p>
+        </div>
+
+
+        <!-- Navigation -->
+        <div class="health-nav">
+
+            <a href="medications.html">💊 Medications</a>
+
+            <a href="discharge.html">🏥 Discharge</a>
+
+            <a href="daily-check.html" class="active">
+                📝 Daily Check
+            </a>
+
+            <a href="alerts.html">⚠️ Alerts</a>
+
+            <a href="recovery.html">📊 Recovery</a>
+
+            <a href="reports.html">📑 Reports</a>
+
+        </div>
+
+
+        <!-- Health Check Form -->
+        <div class="health-card">
+
+            <h2>Today's Health Check</h2>
+
+            <div class="health-form">
+
+                <!-- Date -->
+                <div class="health-input">
+                    <label>Date</label>
+
+                    <input
+                        type="date"
+                        id="checkDate">
+                </div>
+
+
+                <!-- Temperature -->
+                <div class="health-input">
+                    <label>Temperature (°F)</label>
+
+                    <input
+                        type="number"
+                        id="temperature"
+                        placeholder="Example: 98.6"
+                        step="0.1">
+                </div>
+
+
+                <!-- Pain -->
+                <div class="health-input">
+                    <label>Pain Level</label>
+
+                    <select id="painLevel">
+
+                        <option value="">
+                            Select pain level
+                        </option>
+
+                        <option value="0">
+                            0 - No Pain
+                        </option>
+
+                        <option value="1-3">
+                            1-3 - Mild
+                        </option>
+
+                        <option value="4-6">
+                            4-6 - Moderate
+                        </option>
+
+                        <option value="7-9">
+                            7-9 - Severe
+                        </option>
+
+                        <option value="10">
+                            10 - Extreme
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <!-- Sleep -->
+                <div class="health-input">
+                    <label>Sleep Quality</label>
+
+                    <select id="sleepQuality">
+
+                        <option value="">
+                            Select sleep quality
+                        </option>
+
+                        <option value="Good">
+                            Good
+                        </option>
+
+                        <option value="Average">
+                            Average
+                        </option>
+
+                        <option value="Poor">
+                            Poor
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <!-- Appetite -->
+                <div class="health-input">
+                    <label>Appetite</label>
+
+                    <select id="appetite">
+
+                        <option value="">
+                            Select appetite
+                        </option>
+
+                        <option value="Good">
+                            Good
+                        </option>
+
+                        <option value="Normal">
+                            Normal
+                        </option>
+
+                        <option value="Poor">
+                            Poor
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <!-- Energy -->
+                <div class="health-input">
+                    <label>Energy Level</label>
+
+                    <select id="energyLevel">
+
+                        <option value="">
+                            Select energy level
+                        </option>
+
+                        <option value="High">
+                            High
+                        </option>
+
+                        <option value="Normal">
+                            Normal
+                        </option>
+
+                        <option value="Low">
+                            Low
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <!-- Symptoms -->
+                <div class="health-input full-width">
+
+                    <label>Symptoms</label>
+
+                    <textarea
+                        id="symptoms"
+                        placeholder="Describe any symptoms you experienced today..."></textarea>
+
+                </div>
+
+
+                <!-- Notes -->
+                <div class="health-input full-width">
+
+                    <label>Additional Notes</label>
+
+                    <textarea
+                        id="notes"
+                        placeholder="Enter any additional information..."></textarea>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Overall Health -->
+        <div class="health-card">
+
+            <h2>Overall Health Status</h2>
+
+            <div class="check-list">
+
+                <div class="check-item">
+
+                    <label>
+                        How are you feeling today?
+                    </label>
+
+                    <div class="check-options">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="healthStatus"
+                                value="Good">
+                            Good
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="healthStatus"
+                                value="Average">
+                            Average
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="healthStatus"
+                                value="Poor">
+                            Poor
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Save -->
+        <div class="health-card">
+
+            <button
+                class="health-button"
+                onclick="saveHealthCheck()">
+
+                Save Health Check
+
+            </button>
+
+        </div>
+
+
+        <!-- Success Message -->
+        <div
+            id="healthMessage"
+            class="success-message"
+            style="display: none;">
+
+            Daily health check saved successfully!
+
+        </div>
+
+
+        <!-- Footer -->
+        <div class="health-footer">
+
+            Recovery & Health Management
+
+        </div>
+
+    </div>
+
+
+    <script src="daily-check.js"></script>
+
+</body>
+
+</html>

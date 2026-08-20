@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Warning Alerts</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="health-page">
+
+        <!-- Header -->
+
+        <div class="page-header">
+
+            <h1>⚠️ Warning Alerts</h1>
+
+            <p>
+                Monitor important health warnings
+                during your recovery
+            </p>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <div class="health-nav">
+
+            <a href="medications.html">
+                💊 Medications
+            </a>
+
+            <a href="discharge.html">
+                🏥 Discharge
+            </a>
+
+            <a href="daily-check.html">
+                📝 Daily Check
+            </a>
+
+            <a href="alerts.html" class="active">
+                ⚠️ Alerts
+            </a>
+
+            <a href="recovery.html">
+                📊 Recovery
+            </a>
+
+            <a href="reports.html">
+                📑 Reports
+            </a>
+
+        </div>
+
+
+        <!-- Alert Summary -->
+
+        <div class="health-card">
+
+            <h2>Health Alert Summary</h2>
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        ⚠️
+                    </div>
+
+                    <h3>Warnings</h3>
+
+                    <div class="value"
+                         id="warningCount">
+                        0
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        🚨
+                    </div>
+
+                    <h3>Critical Alerts</h3>
+
+                    <div class="value"
+                         id="criticalCount">
+                        0
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        ✅
+                    </div>
+
+                    <h3>Health Status</h3>
+
+                    <div class="value"
+                         id="healthStatus">
+                        Good
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        📅
+                    </div>
+
+                    <h3>Last Check</h3>
+
+                    <div class="value"
+                         id="lastCheck">
+                        None
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Alerts -->
+
+        <div class="health-card">
+
+            <h2>Current Alerts</h2>
+
+            <div
+                id="alertList"
+                class="alert-list">
+
+                <!-- Alerts will appear here -->
+
+            </div>
+
+        </div>
+
+
+        <!-- Health Check Information -->
+
+        <div class="health-card">
+
+            <h2>Check Your Health</h2>
+
+            <p>
+                Complete your Daily Health Check regularly
+                to help identify possible warning signs.
+            </p>
+
+            <br>
+
+            <a
+                href="daily-check.html"
+                class="health-button"
+                style="text-decoration: none;
+                       display: inline-block;">
+
+                Go to Daily Health Check
+
+            </a>
+
+        </div>
+
+
+        <!-- Emergency Information -->
+
+        <div class="health-card">
+
+            <div class="alert danger">
+
+                <div class="alert-icon">
+                    🚨
+                </div>
+
+                <div>
+
+                    <h3>Emergency Warning</h3>
+
+                    <p>
+                        If you experience severe symptoms
+                        or a medical emergency, seek
+                        professional medical assistance
+                        immediately.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+
+        <div class="health-footer">
+
+            Recovery & Health Management
+
+        </div>
+
+    </div>
+
+
+    <script src="alerts.js"></script>
+
+</body>
+
+</html>

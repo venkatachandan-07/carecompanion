@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Discharge Instructions</title>
+
+    <!-- Your existing CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="health-page">
+
+        <!-- Header -->
+        <div class="page-header">
+            <h1>🏥 Smart Discharge Instructions</h1>
+            <p>Important instructions to follow after discharge</p>
+        </div>
+
+
+        <!-- Navigation -->
+        <div class="health-nav">
+
+            <a href="medications.html">💊 Medications</a>
+
+            <a href="discharge.html" class="active">
+                🏥 Discharge
+            </a>
+
+            <a href="daily-check.html">
+                📝 Daily Check
+            </a>
+
+            <a href="alerts.html">
+                ⚠️ Alerts
+            </a>
+
+            <a href="recovery.html">
+                📊 Recovery
+            </a>
+
+            <a href="reports.html">
+                📑 Reports
+            </a>
+
+        </div>
+
+
+        <!-- Patient Information -->
+        <div class="health-card">
+
+            <h2>Patient Information</h2>
+
+            <div class="health-form">
+
+                <div class="health-input">
+                    <label>Patient Name</label>
+                    <input
+                        type="text"
+                        id="patientName"
+                        placeholder="Enter patient name">
+                </div>
+
+
+                <div class="health-input">
+                    <label>Discharge Date</label>
+                    <input
+                        type="date"
+                        id="dischargeDate">
+                </div>
+
+
+                <div class="health-input">
+                    <label>Doctor Name</label>
+                    <input
+                        type="text"
+                        id="doctorName"
+                        placeholder="Enter doctor name">
+                </div>
+
+
+                <div class="health-input">
+                    <label>Follow-up Date</label>
+                    <input
+                        type="date"
+                        id="followupDate">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Recovery Instructions -->
+        <div class="health-card">
+
+            <h2>Recovery Instructions</h2>
+
+            <div class="instruction-list">
+
+                <div class="instruction-item">
+
+                    <div class="instruction-number">1</div>
+
+                    <div>
+                        <h3>Take Medicines</h3>
+
+                        <p>
+                            Take all prescribed medicines on time
+                            and follow the doctor's instructions.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="instruction-item">
+
+                    <div class="instruction-number">2</div>
+
+                    <div>
+                        <h3>Get Adequate Rest</h3>
+
+                        <p>
+                            Get enough sleep and avoid unnecessary
+                            physical activity during recovery.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="instruction-item">
+
+                    <div class="instruction-number">3</div>
+
+                    <div>
+                        <h3>Healthy Diet</h3>
+
+                        <p>
+                            Follow a healthy diet and drink enough
+                            water to support your recovery.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="instruction-item">
+
+                    <div class="instruction-number">4</div>
+
+                    <div>
+                        <h3>Follow-up Appointment</h3>
+
+                        <p>
+                            Attend your scheduled follow-up appointment
+                            with your doctor.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Additional Instructions -->
+        <div class="health-card">
+
+            <h2>Additional Instructions</h2>
+
+            <div class="health-form">
+
+                <div class="health-input full-width">
+
+                    <label>Special Instructions</label>
+
+                    <textarea
+                        id="specialInstructions"
+                        placeholder="Enter any special instructions..."></textarea>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Warning -->
+        <div class="health-card">
+
+            <div class="alert warning">
+
+                <div class="alert-icon">⚠️</div>
+
+                <div>
+
+                    <h3>Important Warning</h3>
+
+                    <p>
+                        Contact your doctor immediately if your
+                        symptoms become worse or if you experience
+                        any serious problems.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Save Button -->
+        <div class="health-card">
+
+            <button
+                class="health-button"
+                onclick="saveInstructions()">
+
+                Save Discharge Instructions
+
+            </button>
+
+        </div>
+
+
+        <!-- Message -->
+        <div
+            id="message"
+            class="success-message"
+            style="display: none;">
+
+            Discharge instructions saved successfully!
+
+        </div>
+
+
+        <!-- Footer -->
+        <div class="health-footer">
+
+            Recovery & Health Management
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="discharge.js"></script>
+
+</body>
+
+</html>

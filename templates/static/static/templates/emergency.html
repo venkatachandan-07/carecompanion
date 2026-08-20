@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency SOS</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <h2>🏥 RecoveryCare</h2>
+
+    <div>
+
+        <a href="/ai-agent">AI Agent</a>
+
+        <a href="/caregiver">Caregiver</a>
+
+        <a href="/emergency">SOS</a>
+
+    </div>
+
+</nav>
+
+
+<div class="container emergency-container">
+
+    <div class="card">
+
+        <h1>🚨 Emergency / SOS</h1>
+
+        <p>
+            Use this button if you need immediate assistance.
+        </p>
+
+
+        <div class="emergency-box">
+
+            <button
+                class="sos-button"
+                onclick="activateSOS()">
+
+                🚨 SOS
+
+            </button>
+
+        </div>
+
+
+        <div id="sosResult"></div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>📞 Emergency Contact</h2>
+
+        <input
+            type="text"
+            id="contactName"
+            placeholder="Contact name">
+
+        <input
+            type="tel"
+            id="contactNumber"
+            placeholder="Emergency contact number">
+
+        <button onclick="saveContact()">
+            Save Contact
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='emergency.js') }}"></script>
+
+</body>
+
+</html>

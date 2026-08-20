@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Recovery Agent</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>🏥 RecoveryCare</h2>
+
+    <div>
+        <a href="/ai-agent">AI Agent</a>
+        <a href="/caregiver">Caregiver</a>
+        <a href="/emergency">SOS</a>
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <div class="card ai-card">
+
+        <h1>🤖 AI Recovery Agent</h1>
+
+        <p>
+            Tell me how you are feeling and I will provide
+            general recovery guidance.
+        </p>
+
+        <textarea
+            id="symptoms"
+            placeholder="Example: I have a mild fever and feel tired..."
+        ></textarea>
+
+        <button onclick="checkRecovery()">
+            Check Symptoms
+        </button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>⚠️ Important</h2>
+
+        <p>
+            This assistant provides general guidance only.
+            It does not replace professional medical advice.
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='ai-agent.js') }}"></script>
+
+</body>
+</html>

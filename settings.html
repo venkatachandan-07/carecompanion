@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | CareCompanion</title>
+
+    <link rel="stylesheet"
+          href="./css/settings.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="settings-header">
+
+        <button
+            type="button"
+            id="backBtn"
+            class="back-btn">
+
+            ← Back
+
+        </button>
+
+        <div>
+
+            <span class="header-label">
+                CARECOMPANION
+            </span>
+
+            <h1>
+                Settings
+            </h1>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main class="settings-container">
+
+
+        <!-- =========================================
+             NOTIFICATION SETTINGS
+        ========================================== -->
+
+        <section class="settings-card">
+
+            <div class="card-heading">
+
+                <div class="setting-icon">
+                    🔔
+                </div>
+
+                <div>
+
+                    <h2>
+                        Notifications
+                    </h2>
+
+                    <p>
+                        Control how CareCompanion
+                        keeps you informed.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- GENERAL NOTIFICATIONS -->
+
+            <div class="setting-row">
+
+                <div class="setting-info">
+
+                    <strong>
+                        Notifications
+                    </strong>
+
+                    <span>
+                        Receive important recovery updates.
+                    </span>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="notificationToggle">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <!-- MEDICATION REMINDERS -->
+
+            <div class="setting-row">
+
+                <div class="setting-info">
+
+                    <strong>
+                        Medication Reminders
+                    </strong>
+
+                    <span>
+                        Receive reminders for scheduled medications.
+                    </span>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="medicationToggle">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             APPEARANCE
+        ========================================== -->
+
+        <section class="settings-card">
+
+            <div class="card-heading">
+
+                <div class="setting-icon">
+                    🎨
+                </div>
+
+                <div>
+
+                    <h2>
+                        Appearance
+                    </h2>
+
+                    <p>
+                        Choose how CareCompanion looks.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div class="setting-info">
+
+                    <strong>
+                        Dark Mode
+                    </strong>
+
+                    <span>
+                        Use a darker appearance for the interface.
+                    </span>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="darkModeToggle">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             ACCOUNT
+        ========================================== -->
+
+        <section class="settings-card">
+
+            <div class="card-heading">
+
+                <div class="setting-icon">
+                    🔒
+                </div>
+
+                <div>
+
+                    <h2>
+                        Account
+                    </h2>
+
+                    <p>
+                        Manage your CareCompanion account.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="account-info">
+
+                <span>
+                    Logged in as
+                </span>
+
+                <strong id="accountEmail">
+                    -
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SAVE BUTTON
+        ========================================== -->
+
+        <button
+            type="button"
+            id="saveSettings"
+            class="save-settings">
+
+            💾 Save Settings
+
+        </button>
+
+
+        <!-- SUCCESS MESSAGE -->
+
+        <p
+            id="saveMessage"
+            class="save-message">
+
+        </p>
+
+    </main>
+
+
+    <script src="./js/settings.js"></script>
+
+</body>
+
+</html>

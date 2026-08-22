@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Recovery Dashboard | CareCompanion</title>
+
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         SIDEBAR
+    =============================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ❤
+            </div>
+
+            <div>
+                <h2>CareCompanion</h2>
+                <span>Recovery Support</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html"
+               class="nav-item active">
+
+                <span>⌂</span>
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="dashboard.html#health-check"
+               class="nav-item">
+
+                <span>♥</span>
+                <span>Health Check</span>
+
+            </a>
+
+
+            <a href="dashboard.html#recovery"
+               class="nav-item">
+
+                <span>↗</span>
+                <span>Recovery</span>
+
+            </a>
+
+
+            <a href="dashboard.html#progress-history"
+               class="nav-item">
+
+                <span>▣</span>
+                <span>Progress History</span>
+
+            </a>
+
+
+            <a href="profile.html"
+               class="nav-item">
+
+                <span>●</span>
+                <span>Profile</span>
+
+            </a>
+
+
+            <a href="settings.html"
+               class="nav-item">
+
+                <span>⚙</span>
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <button id="logoutBtn"
+                    class="logout-btn">
+
+                <span>↪</span>
+                <span>Logout</span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ==============================
+         MAIN CONTENT
+    =============================== -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div>
+
+                <p class="welcome-text">
+
+                    Welcome back,
+                    <span id="userName">
+                        User
+                    </span>
+
+                </p>
+
+                <h1>
+                    Recovery Dashboard
+                </h1>
+
+                <p class="header-description">
+
+                    Your personalized recovery
+                    journey at a glance.
+
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ==============================
+             OVERVIEW
+        =============================== -->
+
+        <section class="overview-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Today's Overview
+                </h2>
+
+                <p>
+                    Keep track of your recovery progress.
+                </p>
+
+            </div>
+
+
+            <div class="overview-grid">
+
+
+                <!-- Recovery Status -->
+
+                <div class="overview-card">
+
+                    <div class="card-icon">
+                        ♥
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-label">
+                            Recovery Status
+                        </span>
+
+                        <h3 id="recoveryStatus">
+                            On Track
+                        </h3>
+
+                        <p id="recoveryStatusText">
+                            Keep following your recovery plan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Health Check -->
+
+                <div class="overview-card">
+
+                    <div class="card-icon">
+                        +
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-label">
+                            Health Check
+                        </span>
+
+                        <h3 id="healthCheckStatus">
+                            Pending
+                        </h3>
+
+                        <p>
+                            Complete today's health check.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Progress -->
+
+                <div class="overview-card">
+
+                    <div class="card-icon">
+                        %
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-label">
+                            Today's Progress
+                        </span>
+
+                        <h3>
+
+                            <span id="progressPercentage">
+                                0
+                            </span>%
+
+                        </h3>
+
+
+                        <div class="progress-bar">
+
+                            <div id="progressBar"
+                                 class="progress-fill">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             DAILY HEALTH CHECK
+        =============================== -->
+
+        <section id="health-check"
+                 class="dashboard-section">
+
+            <div class="feature-card">
+
+                <div class="feature-header">
+
+                    <div class="feature-icon">
+                        ♥
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Daily Health Check
+                        </h2>
+
+                        <p>
+                            Tell us how you are feeling today.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="health-check-body">
+
+                    <div>
+
+                        <span class="card-label">
+                            Today's Status
+                        </span>
+
+                        <h3 id="dailyHealthStatus">
+                            Pending
+                        </h3>
+
+                    </div>
+
+
+                    <button id="healthCheckBtn"
+                            class="primary-btn">
+
+                        Start Health Check
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             AI RECOVERY
+        =============================== -->
+
+        <section id="recovery"
+                 class="dashboard-section">
+
+            <div class="feature-card ai-card">
+
+                <div class="feature-header">
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            AI Recovery Assistant
+                        </h2>
+
+                        <p>
+                            Personalized recovery guidance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ai-body">
+
+                    <p id="aiRecoveryMessage">
+
+                        Complete your daily activities
+                        to receive personalized recovery
+                        guidance.
+
+                    </p>
+
+
+                    <button id="aiRecoveryBtn"
+                            class="secondary-btn">
+
+                        View Recovery Guidance
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             PROGRESS HISTORY
+        =============================== -->
+
+        <section id="progress-history"
+                 class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Progress History
+                </h2>
+
+                <p>
+                    Your recent recovery activity.
+                </p>
+
+            </div>
+
+
+            <div id="progressHistory"
+                 class="history-container">
+
+                <div class="history-empty">
+
+                    <span>▣</span>
+
+                    <p>
+                        No recovery activity recorded yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="dashboard-footer">
+
+            <p>
+                CareCompanion · Your recovery,
+                supported every day.
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <script src="./js/dashboard.js"></script>
+
+</body>
+
+</html>

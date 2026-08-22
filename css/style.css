@@ -1,0 +1,261 @@
+/* =========================================
+   CARECOMPANION - GLOBAL STYLES
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   SPLASH SCREEN
+   ========================================= */
+
+.splash-screen {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #eef8ff,
+        #ffffff,
+        #eaf7f4
+    );
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   LOGO
+   ========================================= */
+
+.logo-container {
+    margin-bottom: 25px;
+
+    animation: logoAppear 1s ease forwards;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #0f9d8a,
+        #1479c9
+    );
+
+    box-shadow:
+        0 15px 35px rgba(20, 121, 201, 0.25);
+
+    position: relative;
+}
+
+
+/* Healthcare cross */
+
+.logo-cross {
+    color: white;
+
+    font-size: 70px;
+    font-weight: bold;
+
+    line-height: 1;
+
+    transform: rotate(0deg);
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   APP NAME
+   ========================================= */
+
+.app-name {
+    font-size: 42px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    color: #12344d;
+
+    margin-bottom: 12px;
+
+    animation: fadeUp 1s ease 0.2s both;
+}
+
+
+/* =========================================
+   TAGLINE
+   ========================================= */
+
+.tagline {
+    max-width: 500px;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    color: #607d8b;
+
+    animation: fadeUp 1s ease 0.4s both;
+}
+
+
+/* =========================================
+   LOADING
+   ========================================= */
+
+.loading-container {
+    width: 220px;
+    height: 5px;
+
+    background: #dbe8ef;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-top: 45px;
+
+    animation: fadeUp 1s ease 0.6s both;
+}
+
+.loading-bar {
+    height: 100%;
+
+    width: 0%;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #0f9d8a,
+        #1479c9
+    );
+
+    animation: loading 2.7s linear forwards;
+}
+
+
+.loading-text {
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    color: #78909c;
+
+    animation: fadeUp 1s ease 0.8s both;
+}
+
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes logoAppear {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-15deg);
+    }
+
+    70% {
+        transform: scale(1.08) rotate(3deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+
+
+@keyframes fadeUp {
+
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes loading {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .splash-screen {
+        padding: 20px;
+    }
+
+    .logo {
+        width: 85px;
+        height: 85px;
+        border-radius: 24px;
+    }
+
+    .logo-cross {
+        font-size: 58px;
+    }
+
+    .app-name {
+        font-size: 32px;
+    }
+
+    .tagline {
+        font-size: 15px;
+        max-width: 330px;
+    }
+
+    .loading-container {
+        width: 180px;
+    }
+}

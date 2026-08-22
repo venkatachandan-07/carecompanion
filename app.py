@@ -42,7 +42,7 @@ def recovery():
         if word in symptoms:
             return jsonify({
                 "level": "emergency",
-                "message": "This symptom may require urgent medical attention. Please contact your local emergency service or healthcare professional immediately."
+                "message": "This symptom may require immediate medical attention. Please contact your local emergency service or healthcare professional immediately."
             })
 
     warning_words = [
